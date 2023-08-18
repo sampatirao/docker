@@ -21,7 +21,7 @@ pipeline {
 			steps {
 				echo 'In SCM Stage'
 				
-				git credentialsId: 'git', url: 'https://github.com/hariharanjenkin/docker.git',branch: 'main'
+				git credentialsId: 'git', url: 'https://github.com/sampatirao/docker.git',branch: 'main'
 
 
 			} // Steps Completed
