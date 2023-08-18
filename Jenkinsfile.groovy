@@ -7,7 +7,7 @@ properties([
 
 
 pipeline {
-	agent {label 'master'}
+	agent {label 'main'}
 	
 	stages {
 		stage('CLEAN WORKSPACE IN JENKINS SERVER'){
@@ -21,7 +21,7 @@ pipeline {
 			steps {
 				echo 'In SCM Stage'
 				
-				git credentialsId: 'c8300171-d7b3-452e-a384-893f10299ad5', url: 'https://github.com/hariharanjenkin/docker.git',branch: 'main'
+				git credentialsId: 'git', url: 'https://github.com/hariharanjenkin/docker.git',branch: 'main'
 
 
 			} // Steps Completed
